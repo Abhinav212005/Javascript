@@ -1,4 +1,4 @@
-const accountId = 142
+const accountId = 142 //value once assigned cannot be changed
 let accountEmail = "hiteshgoogle.com"
 var accountPassword = "12345"
 accountCity = "Jaipur"
