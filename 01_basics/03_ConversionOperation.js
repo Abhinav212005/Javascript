@@ -2,17 +2,21 @@
 //let score = "33a" =>string
 //let score = null
 //let score = undefined
+//let score = "hitesh"
 //let score = true
 
 //console.log(typeof score);
 //console.log(typeof(score));
 
-//let ValueInNumber = Number(score)
+//let ValueInNumber = Number(score)=>score is converted to number
 //console.log(typeof ValueInNumber);
-//console.log(ValueInNumber);
+//console.log(ValueInNumber);=>NaN
 
 //"33" => 33
 //"33a" => NaN also for undefined
+//null => 0
+//undefined => NaN
+//"hitesh" => NaN
 //"true" => 1; "false" => 0
 
 //let isLoggedIn = 1
@@ -31,7 +35,7 @@
 //console.log(stringNumber);
 //console.log(typeof stringNumber);
 
-// OPERATIONS
+// **************OPERATIONS************
 
 let value = 3
 let negValue = -value
@@ -40,7 +44,7 @@ let negValue = -value
 // console.log(2+2);
 // console.log(2-2);
 // console.log(2*2);
-// console.log(2**3);
+// console.log(2**3);=>2 raise to the power 3
 // console.log(2/3);
 // console.log(2%3);
 
@@ -48,17 +52,18 @@ let str1 = "hello"
 let str2 = " hitesh"
 
 let str3 = str1 + str2
-// console.log(str3);
+// console.log(str3);=> hello hitesh
 
-// console.log("1" + 2);
-// console.log(1 + "2");
-// console.log("1" + 2 + 2);
-// console.log(1 + 2 + "2");
+// console.log("1" + 2);=>12
+// console.log(1 + "2");=>12
+// console.log("1" + 2 + 2);=>122
+// console.log(1 + 2 + "2");=>32
 
 // console.log( (3 + 4) * 5 % 3);
 
-// console.log(+true);
-// console.log(+"");
+// console.log(+true);=>1
+// console.log(true+);=>error
+// console.log(+"");=>0
 
 let num1, num2, num3
 
@@ -66,7 +71,21 @@ num1 = num2 = num3 = 2 + 2
 
 let gameCounter = 100
 ++gameCounter;
-console.log(gameCounter);
+console.log(gameCounter);//=>101 
+//Prefix=>Increment before returning
+ 
+let x=3;
+const y = x++;
+
+console.log(`x:${x}, y:${y}`);
+// Expected output: "x:4, y:3"
+
+let a = 3;
+const b = ++a;
+
+console.log(`a:${a}, b:${b}`);
+// Expected output: "a:4, b:4"
+
 
 // link to study
 // https://tc39.es/ecma262/multipage/abstract-operations.html#sec-type-conversion
