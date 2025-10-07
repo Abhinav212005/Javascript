@@ -1,6 +1,8 @@
 //  Primitive => call by value => it means a copy is created and changes will be done in the copy not in the original
-
 //  7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt
+
+// Non Primitive => call by reference =>
+//Arrays, Objects, Functions
 
 const score = 100
 const scoreValue = 100.3
@@ -32,7 +34,7 @@ const myFunction = function(){
     console.log("Hello world");
 }// object function
 
-console.log(typeof anotherId);
+console.log(typeof anotherId); 
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
 
@@ -45,8 +47,8 @@ let myYoutubename = "abhidotcom"
 let anothername = myYoutubename //copy is given
 anothername = "chai"
 
-console.log(myYoutubename);
-console.log(anothername);
+console.log(myYoutubename); //abhidotcom
+console.log(anothername);   //chai
 
 let userOne = {
     email: "abhi@google.com",

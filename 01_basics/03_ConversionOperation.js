@@ -12,6 +12,7 @@
 //console.log(typeof ValueInNumber);
 //console.log(ValueInNumber);=>NaN
 
+//What will happen if we put different scores in console.log(ValueInNumber)
 //"33" => 33
 //"33a" => NaN also for undefined
 //null => 0
@@ -25,6 +26,7 @@
 //let booleanIsLoggedIn = Boolean(isLoggedIn)
 //console.log(booleanIsLoggedIn);
 
+//What will happen if we put different scores in console.log(booleanIsLoggedIn)
 //1 => true; 0 => false
 //"" => false
 //"hitesh" => true
