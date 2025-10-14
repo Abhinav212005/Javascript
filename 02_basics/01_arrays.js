@@ -17,13 +17,13 @@ const myArr2 = new Array(1, 2, 3, 4)
 // myArr.shift() => starting value is removed
 
 // console.log(myArr.includes(9)); => false
-// console.log(myArr.indexOf(3)); => 3
+// console.log(myArr.indexOf(3)); => 3(as 0 is already removed)
 
 // const newArr = myArr.join()
 
-// console.log(myArr);
-// console.log( newArr); => array is converted to string by join
-
+// console.log(myArr); [1,2,3,4,5]
+// console.log( newArr); =>1,2,3,4,5 array is converted to string by join
+// console.log(typeof newArr) => string
 
 // slice, splice
 

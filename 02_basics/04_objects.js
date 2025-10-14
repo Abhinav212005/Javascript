@@ -1,11 +1,11 @@
-// const tinderUser = new Object()
-const tinderUser = {}
+// const tinderUser = new Object() => way to create an object
+const tinderUser = {} // way to create an object
 
 tinderUser.id = "123abc"
 tinderUser.name = "Sammy"
 tinderUser.isLoggedIn = false
 
-// console.log(tinderUser);
+// console.log(tinderUser); => object will be printed like below
 
 const regularUser = {
     email: "some@gmail.com",
@@ -19,7 +19,7 @@ const regularUser = {
 
 // console.log(regularUser.fullname.userfullname.firstname);
 // console.log(regularUser.fullname?.userfullname.firstname); => like this also we can use it ? for existence
-
+// console.log(regularUser.fullname?.userfullname.firstname); => This is known as optional chaining
 
 const obj1 = {1: "a", 2: "b"}
 const obj2 = {3: "a", 4: "b"}
@@ -29,7 +29,7 @@ const obj4 = {5: "a", 6: "b"}
 // const obj3 = Object.assign({}, obj1, obj2, obj4) =>{ '1': "a", '2': "b", '3': "a", '4': "b", '5': "a", '6': "b" }
 
 const obj3 = {...obj1, ...obj2} // => { '1': "a", '2': "b", '3': "a", '4': "b" }
-// console.log(obj3);
+// console.log(obj3); => spreading was used in the above example
 
 
 const users = [
@@ -71,16 +71,17 @@ const course = {
 const {courseInstructor: instructor} = course // now we can call courseInstructor by calling instructor
 console.log(instructor); // hitesh
 
-//Object destructuring
+//Object destructuring => will be used in react
 
 // {
 //     "name": "hitesh",
 //     "coursename": "js in hindi",
 //     "price": "free"
-// }
+// } => it is json => will convert it to object and then use 
 
 [
     {},
     {},
     {}
-]
+] // sometimes we get api in format of array in which objects are present
+// randomuser.me api => to read we use jsonformatter

@@ -6,7 +6,7 @@ const dc_heros = ["superman", "flash", "batman"]
 
 // console.log(marvel_heros[3][1]); => flash
 
-// const allHeros = marvel_heros.concat(dc_heros)
+// const allHeros = marvel_heros.concat(dc_heros) //concat returns a new array so we need to store it
 // console.log(allHeros); => ["thor", "Ironman", "spiderman", "superman", "flash", "batman"]
 
 const all_new_heros = [...marvel_heros, ...dc_heros] // spread operator
@@ -21,8 +21,8 @@ console.log(real_another_array); // [1,2,3,4,5,6,7,6,7,4,5]
 
 
 console.log(Array.isArray("Hitesh")) // false
-console.log(Array.from("Hitesh")) // ['H', 'i', 't', 'e', 's', 'h']
-console.log(Array.from({name: "hitesh"})) // interesting // []
+console.log(Array.from("Hitesh")) // ['H', 'i', 't', 'e', 's', 'h'] =>from converts anything to array here
+console.log(Array.from({name: "hitesh"})) // interesting // [] we got empty array because we didn't told that if we want array of values or keys
 
 let score1 = 100
 let score2 = 200

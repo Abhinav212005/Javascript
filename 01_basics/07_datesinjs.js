@@ -6,7 +6,7 @@ let myDate = new Date()
 // console.log(myDate.toLocaleString());
 // console.log(typeof myDate); => object
 
-// let myCreatedDate = new Date(2023, 0, 23) => Mon Jan 23 2023
+// let myCreatedDate = new Date(2023, 0, 23) => Mon Jan 23 2023(Month starts from 0)
 // let myCreatedDate = new Date(2023, 0, 23, 5, 3) => 1/23/2023, 5:03:00 AM
 // let myCreatedDate = new Date("2023-01-14") => 1/14/2023, 12:00:00 AM
 let myCreatedDate = new Date("01-14-2023") // Same like previous
@@ -27,5 +27,5 @@ console.log(newDate.getDay());
 
 newDate.toLocaleString('default', { //ctrl+space
     weekday: "long",
-    
+    //timeZone
 })
