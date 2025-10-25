@@ -3,6 +3,7 @@ let a = 300
 if (true) {
     let a = 10
     const b = 20
+    //var c=30
     // console.log("INNER: ", a); => 10
     
 }
@@ -11,7 +12,11 @@ if (true) {
 
 // console.log(a); => 300
 // console.log(b);
-// console.log(c);
+// console.log(c); => 30
+
+//for (let index = 0; index < array.length; index++) {
+//    const element = array[index];
+//}
 
 
 function one(){
@@ -19,7 +24,7 @@ function one(){
 
     function two(){
         const website = "youtube"
-        console.log(username);  // hitesh
+        console.log(username);  // hitesh // inner loop can use outer variables but not vice versa
     }
     // console.log(website); => website is not defined as it is out of scope
 
@@ -52,7 +57,7 @@ function addone(num){
 
 
 
-addTwo(5)  // error because you cannot access 'addTwo' before initialization  in this thype of declaration of function
-const addTwo = function(num){
+addTwo(5)  // error because you cannot access 'addTwo' before initialization  in this type of declaration of function
+const addTwo = function(num){  //Hoisting
     return num + 2
 }
