@@ -3,9 +3,9 @@ const user = {
     price: 999,
 
     welcomeMessage: function() {
-        console.log(`${this.username} , welcome to website`);
-        console.log(this);                                 //=> hitesh , welcome to website
-                                                           //  {username: "hitesh",
+        console.log(`${this.username} , welcome to website`); // this keyword => it uses the current context values
+                                         //=> hitesh , welcome to website
+        console.log(this);                                 //  {username: "hitesh",
     }                                                      //   price: 999,
                                                            //   welcomeMessage: [function: welcomeMessage]
                                                            //  } 
@@ -14,12 +14,12 @@ const user = {
 // user.welcomeMessage()
 // user.username = "sam"
 // user.welcomeMessage()                                 =>  sam , welcome to website
-                                                        //  {username: "sam",
+// console.log(this);                                   //  {username: "sam",
                                                         //   price: 999,
                                                         //   welcomeMessage: [function: welcomeMessage]
                                                         //  } 
 
-// console.log(this);   => {} and in browser it will come as window
+// console.log(this);   => {} and in browser it will come as window(after commenting the above lines we printed this)
 
 // function chai(){
 //     let username = "hitesh"
@@ -62,4 +62,6 @@ console.log(addTwo(3, 4))  // => hitesh
 
 // const myArray = [2, 5, 3, 7, 8]
 
-// myArray.forEach()
+// myArray.forEach(()=>{})
+// myArray.forEach(()=>())
+// myArray.forEach(function (){ })
