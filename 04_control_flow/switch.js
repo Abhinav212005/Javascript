@@ -8,7 +8,7 @@
 // }
 
 const month = "march"
-
+// shift+alt+down arrow for copy and pasting it downward
 switch (month) {
     case "jan":
         console.log("January");
@@ -18,7 +18,7 @@ switch (month) {
         break;
     case "march":
         console.log("march");
-        break;
+        break; // if there is no break then all statements after this will be printed
     case "april":
         console.log("april");
         break;
