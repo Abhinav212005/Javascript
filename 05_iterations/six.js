@@ -6,15 +6,15 @@
 //     return item  => return does not work for forEach
 // } )
 
-// console.log(values);
+// console.log(values); //it will give undefined as forEach does not return anything
 
 const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-// const newNums = myNums.filter( (num) => {
-//     return num > 4
+// const newNums = myNums.filter( (num) => { // filter method creates a new array with all elements that pass the test implemented by the provided function
+//     return num > 4 // if we use curly braces then we need to use return statement
 // } )
 
-// console.log(newNums); => [ 5, 6, 7, 8, 9, 10 ]
+// console.log(newNums); => [ 5, 6, 7, 8, 9, 10 ] // filter returns a new array
 
 // const newNums = []
 
@@ -39,7 +39,7 @@ const books = [
     { title: 'Book Nine', genre: 'Non-Fiction', publish: 1981, edition: 1989 },
   ];
 
-  let userBooks = books.filter( (bk) => bk.genre === 'History')
+  let userBooks = books.filter( (bk) => bk.genre === 'History') // if we do not use curly braces then we do not need to use return statement
 
   userBooks = books.filter( (bk) => { 
     return bk.publish >= 1995 && bk.genre === "History"

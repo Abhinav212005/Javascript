@@ -1,7 +1,7 @@
 const coding = ["js", "ruby", "java", "python", "cpp"]
 
-// coding.forEach( function (val){
-//     console.log(val);
+// coding.forEach( function (val){ // This is a callback function
+//     console.log(val);           // callback function is a function which is passed as an argument to another function
 // } )
 
 // coding.forEach( (item) => {
@@ -12,7 +12,7 @@ const coding = ["js", "ruby", "java", "python", "cpp"]
 //     console.log(item);
 // }
 
-// coding.forEach(printMe)
+// coding.forEach(printMe) // passing function as an argument
 
 // coding.forEach( (item, index, arr)=> {
 //     console.log(item, index, arr);

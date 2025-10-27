@@ -7,7 +7,7 @@ const myNums = [1, 2, 3]
 
 // acc:0 and currval:1
 // acc:1 and currval:2
-// acc:3 and currval:6
+// acc:3 and currval:3
 
 const myTotal = myNums.reduce( (acc, curr) => acc+curr, 0)
 
