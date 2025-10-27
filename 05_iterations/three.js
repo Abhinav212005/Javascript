@@ -3,6 +3,9 @@
 // ["", "", ""]
 // [{}, {}, {}]
 
+//for (const iterator of object) {
+//}
+
 const arr = [1, 2, 3, 4, 5]
 
 for (const num of arr) {
@@ -25,7 +28,7 @@ map.set('IN', "India")
 
 // console.log(map);
 
-for (const [key, value] of map) {
+for (const [key, value] of map) { // if you want both key and value then destructure it using []
     // console.log(key, ':-', value);
 }
 

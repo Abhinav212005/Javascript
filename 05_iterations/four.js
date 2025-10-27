@@ -6,7 +6,7 @@ const myObject = {
 }
 
 for (const key in myObject) {
-    //console.log(`${key} shortcut is for ${myObject[key]}`);
+    //console.log(`${key} shortcut is for ${myObject[key]}`); //myObject[key] => to get the value of the key
 }
 
 const programming = ["js", "rb", "py", "java", "cpp"]
