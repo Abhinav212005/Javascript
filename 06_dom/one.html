@@ -30,33 +30,43 @@
 </body>
 </html>
 
-//document.getElementById('title').getAttribute('class') => heading
+//document.getElementById('title').getAttribute('id') => title
+//document.getElementById('title').id => title
 
-//document.getElementById('title').setAttribute('class','test heading') => now one more class is added to the id 'title' that is 'test'
+//document.getElementById('title').getAttribute('class') => heading
+//document.getElementById('title').className => heading
+
+//document.getElementById('title').setAttribute('class','test heading') => now one more class is added to the id 'title' that is 'test heading'
 
 //title.style.backgroundColor = 'green' => like this .padding, .borderRadius = "15px"
 
 //Difference between innerText and textContent => 
+//innerText will not get the text of hidden elements but textContent will get the text of hidden elements also
 
-//document.getElementsByClassName
+//Difference between innerHTML and textContent =>
+//innerHTML will get the html tags also but textContent will not get the html tags
 
-//document.querySelector('h2')
+//document.getElementsByClassName('heading')
 
-//document.querySelector('#title')
+//document.querySelector('h2')=> first h2 element
 
-//document.querySelector('.heading')
+//document.querySelector('#title')=> element with id title
+
+//document.querySelector('.heading')=> first element with class heading
 
 //document.querySelector('input[type="password"]')
 
 //document.querySelectorAll('li') => Nodelist
+
 //const tempLiList = document.querySelectorAll('li')
 //tempLiList[0].style.color = 'green'
 
+//for nodelist we can use function like forEach
 //tempLiList.forEach(function (l){
     l.style.backgroundColor = 'green'
 })
 
-// map functionality is for array
+// map functionality is for array not for nodelist
 
 //now we'll use html collection
 //document.getElementsByClassName('list-item')   => html collection
